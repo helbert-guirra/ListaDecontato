@@ -4,8 +4,8 @@ import imagemAddContato from '../../icons/contact-book.png'
 
 const BotaoContainer = styled.div`
   img {
-    width: 30px; /* Ajuste o tamanho conforme necessário */
-    height: 30px; /* Ajuste o tamanho conforme necessário */
+    width: 30px;
+    height: 30px;
   }
 `
 

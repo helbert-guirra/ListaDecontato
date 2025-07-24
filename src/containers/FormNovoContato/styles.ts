@@ -8,13 +8,13 @@ export const MainContainer = styled.div`
   padding: 2rem;
   background-color: #f9f9f9; /* Cor de fundo suave */
   border-radius: 8px; /* Bordas arredondadas */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 `
 
 export const Titulo = styled.h1`
   font-size: 2rem;
-  color: #333; /* Cor do texto */
-  margin-bottom: 1.5rem; /* Espaçamento inferior */
+  color: #333;
+  margin-bottom: 1.5rem;
 `
 
 export const Form = styled.form`
@@ -22,13 +22,13 @@ export const Form = styled.form`
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 1rem; /* Espaçamento entre os campos */
+  gap: 1rem;
 `
 
 export const CampoCadastro = styled.input`
   padding: 0.75rem;
-  border: 1px solid #ccc; /* Borda padrão */
-  border-radius: 4px; /* Bordas arredondadas */
+  border: 1px solid #ccc;
+  border-radius: 4px;
   font-size: 1rem;
   transition: border-color 0.3s;
 
