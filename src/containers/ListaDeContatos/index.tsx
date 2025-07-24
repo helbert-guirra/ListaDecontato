@@ -1,36 +1,63 @@
 import { useSelector } from 'react-redux'
-
-import Tarefa from '../../components/tarefa/tarefa'
-import { Container } from './styles'
+import CardContato from '../../components/Contato'
+import { ContainerCard, MainContainer, Titulo } from '../../styles'
 import { RootReducer } from '../../store'
+import * as enums from '../../utils/enums/Contato'
 
-const ListaDeContatos = () => {
-  const { tarefas } = useSelector((state: RootReducer) => state)
+const ListaContatos = () => {
+  const { itens: contatosItens } = useSelector(
+    (state: RootReducer) => state.contatos
+  )
+  const { termo, valor, criterio } = useSelector(
+    (state: RootReducer) => state.filtro
+  )
 
+  const filtraContatos = () => {
+    let contatosResultantes = [...contatosItens]
+    if (valor !== enums.Categoria.TODOS) {
+      contatosResultantes = contatosResultantes.filter(
+        (item) => item.categoria === valor
+      )
+    }
+    if (termo) {
+      contatosResultantes = contatosResultantes.filter((item) =>
+        item.nome.toLocaleLowerCase().includes(termo.toLocaleLowerCase())
+      )
+    }
+    return contatosResultantes.sort((a, b) => {
+      return a.nome.localeCompare(b.nome)
+    })
+  }
+  const contatosParaExibir = filtraContatos()
   return (
-    <Container>
-      <p>
-        {tarefas.length} tarefas marcadas como: &quot;categoria&ldquo; e
-        &quot;termo&ldquo;
-      </p>
-      <ul>
-        {tarefas.map((t) => (
-          <li key={t.id}>
-            <Tarefa
-              titulo={t.titulo}
-              prioridade={t.prioridade}
-              status={t.status}
-              tipo={t.tipo}
-              descricao={t.descricao}
-              email={t.email ?? ''}
-              telefone={t.telefone ?? ''}
-              nome={t.nome}
-            />
-          </li>
-        ))}
-      </ul>
-    </Container>
+    <>
+      <MainContainer>
+        <Titulo>Contatos</Titulo>
+        <span>
+          {termo ? `Filtro por nome: "${termo}"` : ''}
+          {criterio === 'categoria' && valor !== 'Todos'
+            ? ` Filtro por categoria: ${valor}`
+            : ''}
+          {/* {criterio === 'todos' && !termo ? 'Mostrando todos os contatos' : ''} */}
+        </span>{' '}
+        <br />
+        <ContainerCard>
+          {contatosParaExibir.map((c) => (
+            <li key={c.id}>
+              <CardContato
+                nome={c.nome}
+                categoria={c.categoria}
+                telefone={c.telefone}
+                email={c.email}
+                aniversario={c.aniversario}
+                id={c.id}
+              />
+            </li>
+          ))}
+        </ContainerCard>
+      </MainContainer>
+    </>
   )
 }
 
-export default ListaDeContatos
+export default ListaContatos
