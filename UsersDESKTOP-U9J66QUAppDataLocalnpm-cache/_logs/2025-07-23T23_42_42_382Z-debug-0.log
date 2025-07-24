@@ -7,7 +7,8 @@
 6 silly config load:file:C:\Users\Usuário\AppData\Roaming\npm\etc\npmrc
 7 verbose title npm start
 8 verbose argv "start"
-9 verbose logfile logs-max:10 dir:C:\Users\Usuário\Documents\EBAC\python\projeto 05\exercicio\listadecontato\UsersDESKTOP-U9J66QUAppDataLocalnpm-cache\_logs\2025-07-19T01_18_14_860Z-
-10 verbose logfile C:\Users\Usuário\Documents\EBAC\python\projeto 05\exercicio\listadecontato\UsersDESKTOP-U9J66QUAppDataLocalnpm-cache\_logs\2025-07-19T01_18_14_860Z-debug-0.log
+9 verbose logfile logs-max:10 dir:C:\Users\Usuário\Documents\EBAC\python\projeto 05\exercicio\listadecontato\UsersDESKTOP-U9J66QUAppDataLocalnpm-cache\_logs\2025-07-23T23_42_42_382Z-
+10 verbose logfile C:\Users\Usuário\Documents\EBAC\python\projeto 05\exercicio\listadecontato\UsersDESKTOP-U9J66QUAppDataLocalnpm-cache\_logs\2025-07-23T23_42_42_382Z-debug-0.log
 11 silly logfile start cleaning logs, removing 1 files
 12 silly logfile done cleaning log files
+13 http fetch GET 200 https://registry.npmjs.org/npm 498ms

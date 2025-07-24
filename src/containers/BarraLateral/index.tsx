@@ -1,5 +1,5 @@
+import React from 'react'
 import FiltroCard from '../../components/FiltroCard'
-
 import * as S from './styles'
 
 const BarraLateral = () => (
@@ -11,7 +11,7 @@ const BarraLateral = () => (
         <FiltroCard legenda="Família" contador={3} />
         <FiltroCard legenda="Trabalho" contador={5} />
         <FiltroCard legenda="Clientes" contador={2} />
-        <FiltroCard legenda="Favoritos" contador={4} />
+        <FiltroCard legenda="Prioridade" contador={4} />
         <FiltroCard legenda="Bloqueados" contador={0} />
       </S.Filtros>
     </div>
