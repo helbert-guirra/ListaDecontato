@@ -1,4 +1,4 @@
-import * as enums from '../utils/enums/Contato'
+import * as enums from '../utils/enums/Contatos'
 
 class Contato {
   nome: string

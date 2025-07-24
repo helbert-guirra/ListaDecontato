@@ -1,9 +1,9 @@
 import { useDispatch, useSelector } from 'react-redux'
-import FiltroContato from '../../components/FIltroCard'
+import FiltroContato from '../../components/FiltroCard'
 import { Aside, BotaoVoltar, Campo } from './styles'
 import { RootReducer } from '../../store'
 import { alterarTermo } from '../../store/reducers/filtro'
-import * as enums from '../../utils/enums/Contato'
+import * as enums from '../../utils/enums/Contatos'
 import BotaoCadastro from '../../components/BotaoCadastro'
 import { Link } from 'react-router-dom'
 

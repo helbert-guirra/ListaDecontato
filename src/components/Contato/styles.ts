@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import variaveis from '../../styles/variaveis'
-import * as enums from '../../utils/enums/Contato'
+import * as enums from '../../utils/enums/Contatos'
 
 type CategoriaProps = {
   $categoria: enums.Categoria

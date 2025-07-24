@@ -1,11 +1,10 @@
 import { FormEvent, useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
-import { useIMask } from 'react-imask'
 
 import { CampoCadastro, MainContainer, Titulo } from '../../styles'
 import { ContainerRadio, Form } from './styles'
-import * as enums from '../../utils/enums/Contato'
+import * as enums from '../../utils/enums/Contatos'
 
 import { cadastrar } from '../../store/reducers/contatos'
 import { validaSalvamento } from '../../utils/validacoes/validacoes'

@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import Contato from '../../models/Contato'
-import * as enums from '../../utils/enums/Contato'
+import * as enums from '../../utils/enums/Contatos'
 
 type ContatosState = {
   itens: Contato[]
