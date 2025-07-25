@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 
 import { CampoCadastro, MainContainer, Titulo } from '../../styles'
 import { ContainerRadio, Form } from './styles'
-import * as enums from '../../utils/enums/Contatos'
+import * as enums from '../../utils/enums/contato'
 
 import { cadastrar } from '../../store/reducers/contatos'
 import { validaSalvamento } from '../../utils/validacoes/validacoes'

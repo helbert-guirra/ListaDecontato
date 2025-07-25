@@ -2,7 +2,7 @@ import { useSelector } from 'react-redux'
 import CardContato from '../../components/Contato'
 import { ContainerCard, MainContainer, Titulo } from '../../styles'
 import { RootReducer } from '../../store'
-import * as enums from '../../utils/enums/Contatos'
+import * as enums from '../../utils/enums/contato'
 
 const ListaContatos = () => {
   const { itens: contatosItens } = useSelector(

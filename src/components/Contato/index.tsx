@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux'
 
 import * as S from './styles'
 import { remover, editar } from '../../store/reducers/contatos'
-import Contato from '../../models/Contato'
+import Contato from '../../models/contato'
 import { validaSalvamento } from '../../utils/validacoes/validacoes'
 import { Editando } from './styles'
 
